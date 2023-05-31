@@ -56,9 +56,11 @@
 </div>
 
 <div class="mt-4" style="width: 100%;">
+  {% block Btn-action %}
 <button type="submit" class="btn btn-secondary mb-3">
-    {% block btn-action %} <i class="fas fa-plus"></i>&nbsp;&nbsp; Add Product {% endblock btn-action %}
+    <i class="fas fa-plus"></i>&nbsp;&nbsp; Add Product 
 </button>
+{% endblock Btn-action %}
 <a href="{% url 'home' %}" {% block btn-back %} {% endblock btn-back %} class="btn btn-outline-dark mb-3 ms-2" style="width: 50px;" title="Back">
 <i class="fas fa-chevron-left"></i>
 </a>
@@ -69,30 +71,7 @@
 
 {% block btn-saveHidden %}{% endblock btn-saveHidden %}
   
-  <!-- Modal -->
-  <div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="saveModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="saveModalLabel"><i class="fas fa-hdd"></i>&nbsp;&nbsp; Save changes?</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <div class="text-center tex-secondary mt-3">
-            <span class="fa-stack fa-3x">
-                <i class="fas fa-cloud fa-stack"></i>
-                <i class="fas fa-hdd fa-stack-1x fa-inverse"></i>
-            </span>
-          </div>
-          <div class="mb-3 mt-3">Wold you like to save ?</div>
-        </div>
-        <div class="modal-footer">
-          <a href="{% url 'home' %}" class="btn btn-outline-dark btn-sm" style="width: 70px;">No</a>
-          <button type="submit" class="btn btn-secondary btn-sm" style="width: 70px;">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
         </form>
 

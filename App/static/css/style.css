@@ -10,10 +10,57 @@ body {
     min-height: 100%;
     margin-bottom: -50px;
 }
-#footer, .push {
+#footer, 
+.push {
     height: 50px;
 }
 
 .side-label {
     width: 45px;
+}
+
+.swal-modal {
+    background-color: rgba(0, 0, 0, 0.651);
+    color: #fff;
+}
+
+.swal-text {
+    color: #fff;
+    font-size: 15px;
+}
+.swal-title {
+    color: #fff;
+    font-size: 20px;
+}
+.swal-icon--success:before,
+.swal-icon--success:after,
+.swal-icon--success__hide-corners {
+    background: none !important;
+}
+
+.swal-icon--success {
+    border-color: #ffc107;
+}
+
+.swal-icon--success__line {
+    border-color: #ffc107;
+}
+
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 5px;
+    background-color: #ffc107;
+    font-size: 12px;
+    border: 1px splid #ffc107;
+    color: #000;
+}
+
+.swal-button:focus {
+    box-shadow: none;
+}
+
+.swal-button:not([disabled]):hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ffc107;
 }

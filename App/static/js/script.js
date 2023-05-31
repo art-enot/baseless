@@ -20,3 +20,10 @@ $(document).ready(function() {
         }
     });
 });
+
+// $("#product, #product2").on("keyup", function() {
+//     $(".btn-action").prop("disabled", false);
+//     if( ($("#product").val()) == ($("#product2").val()) ) {
+//         $(".btn-action").prop("disabled", true);
+//     }
+// });
